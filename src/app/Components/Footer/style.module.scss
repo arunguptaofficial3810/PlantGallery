@@ -29,6 +29,13 @@
                 display: flex;
                 align-items: center;
                 gap: 10px;
+                a{
+                    color: inherit;
+                    transition: color 0.2s ease-in-out;
+                }
+                a:hover{
+                    color: var(--green);
+                }
             }
         }
     }

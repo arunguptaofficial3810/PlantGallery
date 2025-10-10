@@ -21,4 +21,16 @@
         font-size: 24px;
     }
 }
+.menu{
+    display: none;
+}
+@media screen and (max-width: 767px) {
+                padding: 1rem ;
+                .links{
+                    display: none;
+                }
+                .menu{
+                    display: block;
+                }
+}
 }

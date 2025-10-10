@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import logo from '../../assets/logo.png'
 import style from './style.module.scss'
+import { MenuOutlined } from '@ant-design/icons'
 
 const Header = () => {
   const navLinks = [
@@ -38,6 +39,7 @@ const Header = () => {
         </li>
         )}
       </ul>
+      <MenuOutlined className={style.menu} />
     </nav>
   )
 }

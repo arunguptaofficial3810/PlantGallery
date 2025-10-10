@@ -2,7 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import style from './style.module.scss'
-import { FacebookOutlined, InstagramOutlined, WhatsAppOutlined } from '@ant-design/icons'
+import { FacebookOutlined, InstagramOutlined, WhatsAppOutlined, MailOutlined } from '@ant-design/icons'
+import { email_id, facebook_link, instagram_link, whatsApp_link } from '@/app/utils'
 
 const Footer = () => {
   return (
@@ -20,16 +21,19 @@ const Footer = () => {
         </div>
 
       <div className={style['footer-social']}>
-          <span className={style.quickheading}>Follow Us</span>
+          <span className={style.quickheading}>Connect Us</span>
           <div className={style['social-icons']}>
-            <a href="https://facebook.com" aria-label="Facebook" title="Facebook" target="_blank" rel="noopener noreferrer">
-            <FacebookOutlined width={20} height={20} />
+            <a href={facebook_link} aria-label="Facebook" title="Facebook" target="_blank" rel="noopener noreferrer">
+              <FacebookOutlined style={{ fontSize: 20 }} />
             </a>
-            <a href="https://instagram.com" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener noreferrer">
-            <InstagramOutlined width={20} height={20} />
+            <a href={instagram_link} aria-label="Instagram" title="Instagram" target="_blank" rel="noopener noreferrer">
+              <InstagramOutlined style={{ fontSize: 20 }} />
             </a>
-            <a href="https://wa.me/1234567890" aria-label="WhatsApp" title="WhatsApp" target="_blank" rel="noopener noreferrer">
-            <WhatsAppOutlined width={20} height={20} />
+            <a href={whatsApp_link} aria-label="WhatsApp" title="WhatsApp" target="_blank" rel="noopener noreferrer">
+              <WhatsAppOutlined style={{ fontSize: 20 }} />
+            </a>
+            <a href={email_id} aria-label="Email" title="Email us">
+              <MailOutlined style={{ fontSize: 20 }} />
             </a>
           </div>
         </div>
