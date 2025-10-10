@@ -1,0 +1,51 @@
+.banner{
+    background-image: url('../../assets/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 60vh;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.35);
+        pointer-events: none;
+    }
+    .center{
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        min-height: inherit;
+        .heading{
+            font-size: var(--font-size-heading);
+            color: white;
+        }
+        .moto{
+            color: white;
+            font-size: var(--font-size-para);
+        }
+        .button{
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: var(--green);
+            color: white;
+            font-size: var(--font-size-para);
+            border: none;
+            cursor: pointer;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .center{
+            .heading{
+                text-align: center;
+            }
+        }
+    }
+}

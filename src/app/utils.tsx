@@ -1,0 +1,5 @@
+export const mobile_number = "+918652864081"
+export const whatsApp_link = "https://wa.me/+918652864081"
+export const instagram_link = "https://instagram.com"
+export const facebook_link = "https://facebook.com"
+export const email_id = "mailto:contact@plantgallery.com"

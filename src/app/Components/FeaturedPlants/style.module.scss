@@ -1,0 +1,20 @@
+.featuredPlants{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    .title{
+        text-align: center;
+        font-size: var(--font-size-heading);
+    }
+    .plantsList{
+        display: flex;
+        gap: 10px;
+        margin-top: 2rem;
+    }
+    @media screen and (max-width: 767px) {
+        padding: 2rem 1rem;
+        .plantsList{
+            flex-direction: column;
+        }
+    }
+}
