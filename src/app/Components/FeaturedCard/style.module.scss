@@ -1,0 +1,17 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .name{
+        text-align: center;
+    }
+    .imgwrapper{
+        width: 100%;
+        text-align: center;    
+    }
+    .info{
+        font-size: var(--font-size-small);
+        text-align: center;
+        padding: 0 1rem;
+    }
+}
