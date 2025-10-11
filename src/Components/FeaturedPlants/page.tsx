@@ -1,9 +1,9 @@
 import React from 'react'
 import style from './style.module.scss'
-import SnakePlant from '../../../public/featuredplants/snakeplant.png'
-import Monstera from '../../../public/featuredplants/monsterra.png'
-import Fiddle from '../../../public/featuredplants/fiddle.png'
-import Alovera from '../../../public/featuredplants/aloevera.png'
+import SnakePlant from '../../../public/featuredplants/snakeplant.webp'
+import Monstera from '../../../public/featuredplants/monsterra.webp'
+import Fiddle from '../../../public/featuredplants/fiddle.webp'
+import Alovera from '../../../public/featuredplants/aloevera.webp'
 import FeaturedCard from '../FeaturedCard/FeaturedCard'
 
 const FeaturedPlants = () => {
