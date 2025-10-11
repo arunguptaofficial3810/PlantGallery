@@ -8,12 +8,12 @@
   --green: #1a6c25
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 html,
 body {
@@ -23,8 +23,8 @@ body {
 
 body {
   font-size: var(--font-size-para);
-  color: var(--foreground);
-  background: var(--background);
+  /* color: var(--foreground);
+  background: var(--background); */
   /* font-family: var(--font-lato), Arial, Helvetica, sans-serif; */
   font-family: var(--rubik), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -42,11 +42,11 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-}
+} */
 
 section{
   margin-top: 4rem;
