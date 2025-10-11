@@ -15,7 +15,7 @@ const FeaturedCard: React.FC<FeaturedCardProps> = ({ data: { img, name, info } }
     <div className={style.card}>
       <div className={style.imgwrapper}>
         <Image src={img} alt={name} width={200} height={250} />
-        </div>
+      </div>
       <p className={style.name}>{name}</p>
       <p className={style.info}>{info}</p>
     </div>
@@ -23,3 +23,5 @@ const FeaturedCard: React.FC<FeaturedCardProps> = ({ data: { img, name, info } }
 }
 
 export default FeaturedCard
+
+
