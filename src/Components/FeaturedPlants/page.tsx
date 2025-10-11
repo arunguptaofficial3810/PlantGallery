@@ -1,10 +1,10 @@
 import React from 'react'
 import style from './style.module.scss'
-import FeaturedCard from '../FeaturedCard/page'
-import SnakePlant from '../../assets/featuredplants/snakeplant.png'
-import Monstera from '../../assets/featuredplants/monsterra.png'
-import Fiddle from '../../assets/featuredplants/fiddle.png'
-import Alovera from '../../assets/featuredplants/aloevera.png'
+import SnakePlant from '../../../public/featuredplants/snakeplant.png'
+import Monstera from '../../../public/featuredplants/monsterra.png'
+import Fiddle from '../../../public/featuredplants/fiddle.png'
+import Alovera from '../../../public/featuredplants/aloevera.png'
+import FeaturedCard from '../FeaturedCard/FeaturedCard'
 
 const FeaturedPlants = () => {
     const featuredPlants = [
