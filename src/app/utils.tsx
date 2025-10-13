@@ -1,5 +1,5 @@
-export const mobile_number = "+918652864081"
-export const whatsApp_link = "https://wa.me/+918652864081"
+export const mobile_number = "+917678087061"
+export const whatsApp_link = "https://wa.me/+917678087061"
 export const instagram_link = "https://instagram.com"
 export const facebook_link = "https://facebook.com"
-export const email_id = "mailto:contact@plantgallery.com"
+export const email_id = "mailto:arungupta3810@gmail.com"
