@@ -1,8 +1,11 @@
+import GalleryAlbum from '@/Components/GalleryAlbum/page'
 import React from 'react'
 
 const Gallery = () => {
   return (
-    <section>Gallery</section>
+    <section>
+      <GalleryAlbum />
+    </section>
   )
 }
 
