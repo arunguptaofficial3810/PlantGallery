@@ -1,0 +1,11 @@
+.customerReview{
+    padding: 1rem 3rem;
+.title{
+    font-size: var(--font-size-heading);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+@media screen and (max-width: 767px) {
+    padding: 1rem;
+}
+}

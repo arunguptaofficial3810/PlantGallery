@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import logo from "../../../public/logo.webp";
 import style from "./style.module.scss";
 import { CloseOutlined, MenuOutlined } from "@ant-design/icons";
+import { navLinks } from "@/app/utils";
 
 const Header = () => {
   const [ isOpen, setIsopen ] = useState(false)
@@ -13,24 +14,6 @@ const Header = () => {
     setIsopen(!isOpen)
   }
 
-  const navLinks = [
-    {
-      name: "Home",
-      link: "/",
-    },
-    {
-      name: "About",
-      link: "/about",
-    },
-    {
-      name: "Gallery",
-      link: "/gallery",
-    },
-    {
-      name: "Contact",
-      link: "/contact",
-    },
-  ];
   return (
     <nav className={style.navbar}>
       <div className={style.wrapper}>

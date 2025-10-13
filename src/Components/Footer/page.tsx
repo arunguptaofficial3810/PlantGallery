@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import style from './style.module.scss'
 import { FacebookOutlined, InstagramOutlined, WhatsAppOutlined, MailOutlined } from '@ant-design/icons'
-import { email_id, facebook_link, instagram_link, whatsApp_link } from '@/app/utils'
+import { email_id, facebook_link, instagram_link, navLinks, whatsApp_link } from '@/app/utils'
 
 const Footer = () => {
   return (
@@ -13,10 +13,9 @@ const Footer = () => {
       <div className={style['footer-links']}>
           <span className={style.quickheading}>Quick Links</span>
           <ul>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/gallery">Gallery</Link></li>
-            <li><Link href="/about">About</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
+          {navLinks?.map((e, index) => (
+            <li key={index}><Link href={e?.link}>{e?.name}</Link></li>
+          ))}
           </ul>
         </div>
 
