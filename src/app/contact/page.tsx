@@ -1,8 +1,11 @@
+import ContactSection from '@/Components/ContactSection/page'
 import React from 'react'
 
 const Contact = () => {
   return (
-    <section>Contact</section>
+    <section>
+      <ContactSection />
+    </section>
   )
 }
 

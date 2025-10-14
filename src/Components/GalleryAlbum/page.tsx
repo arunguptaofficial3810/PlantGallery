@@ -17,7 +17,7 @@ const GalleryAlbum = () => {
       <div className={style.wrapper}>
         {!!pic?.length ? (
           pic?.map((e, index) => (
-              <img src={e} key={index} alt="picture" />
+              <img src={e} key={index} alt="picture" loading="lazy" />
           ))
         ) : (
           <div className={style.empty}>
