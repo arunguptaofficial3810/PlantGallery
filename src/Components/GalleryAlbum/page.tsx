@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./style.module.scss";
-import Image from "next/image";
 
 const GalleryAlbum = () => {
   const pic = [

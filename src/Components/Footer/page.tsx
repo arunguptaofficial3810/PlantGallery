@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import style from './style.module.scss'
 import { FacebookOutlined, InstagramOutlined, WhatsAppOutlined, MailOutlined } from '@ant-design/icons'
 import { email_id, facebook_link, instagram_link, navLinks, whatsApp_link } from '@/app/utils'
