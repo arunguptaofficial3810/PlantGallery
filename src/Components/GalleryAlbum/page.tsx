@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./style.module.scss";
-import Image from "next/image";
 
 const GalleryAlbum = () => {
   const pic = [
@@ -17,7 +16,7 @@ const GalleryAlbum = () => {
       <div className={style.wrapper}>
         {!!pic?.length ? (
           pic?.map((e, index) => (
-              <img src={e} key={index} alt="picture" />
+              <img src={e} key={index} alt="picture" loading="lazy" />
           ))
         ) : (
           <div className={style.empty}>

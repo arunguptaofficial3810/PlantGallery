@@ -3,6 +3,7 @@ import { Lato, Rubik } from "next/font/google";
 import "./globals.css";
 import Header from "../Components/Header/page";
 import Footer from "../Components/Footer/page";
+import { Analytics } from "@vercel/analytics/next"
 
 const lato = Lato({
   variable: "--font-lato",
@@ -30,6 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${rubik.variable} ${lato.variable}`}>
         <Header />
+        <Analytics/>
         {children}
         <Footer />
       </body>
