@@ -38,6 +38,11 @@
                 }
             }
         }
+        .footer-logo{
+        p{
+            margin-top: 1rem;
+        }
+    }
     }
 
     .footer-bottom{
@@ -49,5 +54,26 @@
     }
     @media screen and (max-width: 767px) {
         padding: 1rem;
+        .footer-container{
+            flex-direction: column;
+            gap: 1rem;
+            .footer-links{
+                ul{
+                    margin-top: 0.5rem;
+                    display: flex;
+                    gap: 1rem;
+                }
+            }
+            .footer-social{
+                .social-icons{
+                margin-top: 0.5rem;
+                }
+            }
+            .footer-logo{
+                p{
+                    margin-top: 0.5rem;
+                }
+            }
+        }
     }
 }

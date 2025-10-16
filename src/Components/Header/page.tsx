@@ -18,7 +18,7 @@ const Header = () => {
     <nav className={style.navbar}>
       <div className={style.wrapper}>
       <Link href={"/"}>
-        <div className={style.logoSection}>
+        <div className={style.logoSection} onClick={() => setIsopen(false)}>
           <Image src={logo} alt="logo" width={25} height={25} />
           <span className={style.logoName}>Plant Gallery</span>
         </div>
