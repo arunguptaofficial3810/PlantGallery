@@ -18,6 +18,7 @@ const rubik = Rubik({
 });
 
 export const metadata: Metadata = {
+  icons: { icon: '/logo.webp' },
   title: "Plant Gallery | Discover Your Green Space",
   description: "Explore a curated collection of beautiful indoor and outdoor plants. Discover tips, care guides, and inspiration for creating your perfect green space.",
 };
