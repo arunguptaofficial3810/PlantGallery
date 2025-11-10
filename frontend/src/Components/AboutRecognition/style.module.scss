@@ -1,0 +1,29 @@
+.recognition{
+    padding: 1rem 3rem;
+    .title{
+        font-size: var(--font-size-heading);
+    }
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin-top: 1rem;
+        p{
+            font-size: var(--font-size-heading);
+            font-weight: 900;
+            color: var(--green);
+            margin-bottom: 0.5rem;
+        }
+        span{
+            font-size: var(--font-size-para);
+        }
+    }
+    @media screen and (max-width: 767px) {
+        padding: 1rem;
+        .wrapper{
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+    }
+}

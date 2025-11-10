@@ -1,0 +1,136 @@
+.modalWrapper{
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    // display: none;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.modal{
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    padding: 24px;
+    animation: slideUp 0.25s ease-out forwards;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(12px);
+        opacity: 0.9;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.formGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.label{
+    font-size: 14px;
+    color: #374151; /* gray-700 */
+    font-weight: 600;
+}
+
+.input{
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb; /* gray-200 */
+    border-radius: 8px;
+    background: #fafafa;
+    color: #111827; /* gray-900 */
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.input::placeholder{
+    color: #9ca3af; /* gray-400 */
+}
+
+.input:focus{
+    border-color: #34d399; /* emerald-400 */
+    box-shadow: 0 0 0 1px var(--green); /* emerald-500 @ 15% */
+    background: #fff;
+}
+
+.submitButton{
+    width: 100%;
+    margin-top: 4px;
+    height: 44px;
+    border: none;
+    border-radius: 10px;
+    background: var(--green);
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: .2px;
+    cursor: pointer;
+    transition: transform 0.06s ease, filter 0.2s ease;
+}
+
+.submitButton:hover{
+    filter: brightness(1.03);
+}
+
+.submitButton:active{
+    transform: translateY(1px);
+}
+
+.closeButton{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background: #f3f4f6;
+    color: #111827;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.closeButton:hover{
+    background: var(--green);
+    color: #fff;
+}
+.other{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    span{
+        font-size: var(--font-size-small);
+    }
+    span:hover{
+        color: var(--green);
+        cursor: pointer;
+    }
+}
